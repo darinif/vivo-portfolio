@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap= "http://phonegap.com/ns/1.0"
-	id= "com.alunny.amazing"
-	version= "0.0.5">
+	id= "br.com.wunderman.vivo.portfoliodigital"
+	version= "0.0.1">
 
-	<name>SpeakAll</name>
+	<name>Portfólio Digital Vivo</name>
 
 	<description>
-		Aplicativo de comunicação audio visual 
+		Aplicativo de Ipad voltado para uso dos profissionais da Vivo para demonstrar os Serviços oferecidos pela Vivo.
 	</description>
 
-	<author href="http://fpupor.github.com"
-		email="fpupor@gmail.com">
-		Felipe Pupo
+	<author href="https://github.com/fernandimmd"
+			email="fernandim@gmail.com">
+			
 	</author>
 
 	<gap:platforms>
@@ -22,10 +22,7 @@
 		<gap:platform name="blackberry" project="widgets"/>
 	</gap:platforms>
 
-	<feature name="http://api.phonegap.com/1.0/file"/>
-	<feature name="http://api.phonegap.com/1.0/media"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
-	<feature name="http://api.phonegap.com/1.0/notification"/>
 	
 	<access origin=".*" />
 
