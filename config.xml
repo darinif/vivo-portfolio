@@ -27,5 +27,8 @@
 	<access origin=".*" />
 
 	<!-- sample preference specification -->
-	<!-- <preference name="autorotate" value="false" readonly="true"/> -->
+	<preference name="orientation" value="landscape" />
+	<preference name="target-device" value="tablet" />
+	<preference name="fullscreen" value="true" />
+	<preference name="webviewbounce" value="false" />
 </widget>
