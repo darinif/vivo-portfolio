@@ -2,23 +2,23 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap= "http://phonegap.com/ns/1.0"
 	id= "Q92WW3S2GC.br.com.wunderman.vivo.portifoliodigital"
-	version= "0.0.1">
+	version= "0.0.2">
 
-	<name>Portfólio Digital Vivo</name>
+	<name>Portfólio Digital Telefônica Vivo</name>
 
 	<description>
-		Aplicativo de Ipad voltado para uso dos profissionais da Vivo para demonstrar os Serviços oferecidos pela Vivo.
+		A Telefônica Vivo é pioneira em soluções integradas, com o maior portfólio de produtos e serviços, a maior cobertura e melhor sinal, para empresas de qualquer tamanho e perfil.
+		Este aplicativo contém o nosso portfólio digital com detalhamento de todas as soluções de de voz, dados, TI e móveis, e é destinado aos nossos Gerentes de Negócio.
 	</description>
 
 	<author href="https://github.com/fernandimmd"
 			email="fernandim@gmail.com">
-			
 	</author>
 
 	<gap:platforms>
 		<gap:platform name="android" minVersion="2.1" />
 		<gap:platform name="webos" />
-		<gap:platform name="symbian.wrt" />
+		<gap:platform name="ios" />
 		<gap:platform name="blackberry" project="widgets"/>
 	</gap:platforms>
 
