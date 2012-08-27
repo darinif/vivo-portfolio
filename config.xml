@@ -26,7 +26,7 @@
 	
 	<access origin=".*" />
 
-	<!-- sample preference specification -->
+	<!-- sample preference specification 
 	<preference name="orientation" value="landscape" />
 	<preference name="target-device" value="tablet" />
 	<preference name="fullscreen" value="true" />
@@ -37,5 +37,5 @@
 	<icon src="img/icon72.jpg" width="72" height="72" />
 	<icon src="img/icon114.jpg" width="114" height="114" />
 	
-	<gap:splash src="img/splash.png" width="1024" height="1024" />
+	<gap:splash src="img/splash.png" width="1024" height="1024" />-->
 </widget>
