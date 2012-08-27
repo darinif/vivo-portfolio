@@ -31,4 +31,11 @@
 	<preference name="target-device" value="tablet" />
 	<preference name="fullscreen" value="true" />
 	<preference name="webviewbounce" value="false" />
+	
+	<icon src="img/icon50.jpg" width="50" height="50" />
+	<icon src="img/icon57.jpg" width="57" height="57" />
+	<icon src="img/icon72.jpg" width="72" height="72" />
+	<icon src="img/icon114.jpg" width="114" height="114" />
+	
+	<gap:splash src="img/splash.png" width="1024" height="1024" />
 </widget>
