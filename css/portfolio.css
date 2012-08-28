@@ -1,141 +1,58 @@
 ﻿body{
-
-}
-
-#root{
-	height: 768px;
-	margin: 0 auto;
-	position: relative;
-	width: 1004px;
-}
-
-	#root a.go-home{
-		height: 75px;
-	    left: 137px;
-	    position: absolute;
-	    width: 143px;
-	    z-index: 1;
+		margin:0;
+		padding:0;
 	}
-
-	#root ul.nav-header{
-		height: 40px;
-		left: 425px;
-		position: absolute;
-		top: 55px;
-		z-index: 1;
+	img{
+		float:left;
+		clear:both
 	}
-
-		#root ul.nav-header li{
-			float: left;
-			height: 25px;
-		}
-
-		#root ul.nav-header li a.infrastructure,
-		#root ul.nav-header li a.service-desk{width: 108px;}
-		#root ul.nav-header li a.information-security{width: 177px;}
-		#root ul.nav-header li a.sva{width: 58px;}
-		#root ul.nav-header li a{height: 25px;}
-
-	#root .page{
-		background-repeat: no-repeat;
-		display: none;
-		height: 768px;
-		position: relative;
-		width: 1004px;
-	}
-
-		#root .page img{
-			left: 0;
-			position: absolute;
-			top: 0;
-		}
-
-		#root .page ul.nav-content{position: absolute;}
-
-	#root #home{background-image: url(../img/home.jpg);}
-
-		#root #home .links-home{position: relative;}
-
-			#root #home .links-home a{
-				height: 24px;
-				position: absolute;
-			}
-
-			#root #home .links-home a.information-security{
-				left: 587px;
-			    top: 185px;
-			    width: 190px;
-			}
-
-			#root #home .links-home a.sva{
-				left: 777px;
-			    top: 236px;
-			    width: 58px;
-			}
-
-			#root #home .links-home a.infrastructure{
-				left: 659px;
-			    top: 361px;
-			    width: 120px;
-			}
-
-		
-			#root #home .links-home a.service-desk{
-				left: 760px;
-			    top: 448px;
-			    width: 114px;
-			}
-
-	#root #infrastructure{}
 	
-		#root #infrastructure ul.nav-content{
-			left: 160px;
-		    top: 190px;
+	#root{
+		margin:0 auto;
+		width:1024px;
+		height:768px;
+		overflow:hidden;
+	}
+		#root .wrapper{
+			position:relative;
+			float:left;
+			clear:both
 		}
-
-			#root #infrastructure ul.nav-content li a{
-				height: 24px;
-				margin-bottom: 2px;
-				width: 142px;
+			#root .wrapper .title{
+				position:absolute;
+				top:162px;
+				right:7px;
+				width: 495px;
+				height: 60px;
 			}
-
-	#root #service-desk{}
-
-		#root #service-desk ul.nav-content{
-			left: 152px;
-		    top: 191px;
-		}
-
-			#root #service-desk ul.nav-content li a{
-				height: 24px;
-				margin-bottom: 2px;
-				width: 142px;
+			#root .wrapper .content{
+	position:absolute;
+	top:236px;
+	right:7px;
+	width: 495px;
+	height: 475px;
+	overflow:hidden
 			}
-
-	#root #information-security{}
-
-		#root #information-security ul.nav-content{
-			left: 157px;
-		    top: 216px;
-		}
-
-			#root #information-security ul.nav-content li a{
-				height: 41px;
-				width: 142px;
+			#root .wrapper .content img.txt{
+				padding:20px 0 0 30px
 			}
-
-	#root #sva{}
-
-		#root #sva ul.nav-content{
-			left: 155px;
-		    top: 193px;
-		}
-
-			#root #sva ul.nav-content li a{width: 142px;}
-
-			#root #sva ul.nav-content li a.multimedia-solution{
-				height: 24px;
-				margin-bottom: 5px;
+			
+			#root .wrapper .content dl{
+				padding:20px 0 0 20px;
+				float:left;
+				display:block;
+				position:relative;
 			}
-
-			#root #sva ul.nav-content li a.collaboration-solution{height: 40px;}
+				#root .wrapper .content dl dt{
+					float:left;
+					clear:both;
+					cursor:pointer;
+					padding:4px 0
+				}
+				#root .wrapper .content dl dd{
+					padding:10px 0 30px 0 ;
+					float:left;
+					clear:both;
+					display:none;
+					overflow:hidden;
+				}

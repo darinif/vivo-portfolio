@@ -1,5 +1,5 @@
-﻿<!doctype html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="utf-8">
 	<title>Vivo Portfolio</title>
@@ -7,69 +7,330 @@
 	<meta name="author" content="Wunderman">
 	<link rel="stylesheet" href="css/reset.css" media="all" type="text/css">
 	<link rel="stylesheet" href="css/portfolio.css" media="all" type="text/css">
-	<link rel="apple-touch-icon" href="./apple-touch-icon.png" /> <!-- Iphone / Ipad 72x72 -->
-	<link rel="apple-touch-startup-image" href="./startup.png" /><!-- Iphone 320x460 / Ipad 1004x768 -->
+	<link rel="apple-touch-icon" href="./img/icon72.png" /> <!-- Iphone / Ipad 72x72 -->
+	<link rel="apple-touch-startup-image" href="./img/splash.png" /><!-- Iphone 320x460 / Ipad 1004x768 -->
 	<meta name="viewport" content="user-scalable=no, width=device-width" /> <!-- Prevent Scaling -->
 	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- Eliminate url and button bars if added to home screen -->
 	
 	<script src="phonegap.js"></script>
-    <script type="text/javascript" charset="utf-8" src="zepto.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/iscroll.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/portfolio.js"></script>
 </head>
 <body>
-	<div id="root">
-		<a href="#" class="go-home" title="Página Inicial"></a>
-		<ul class="nav-header">
-			<li><a href="#" class="infrastructure" title="Infraestrutura"></a></li>
-			<li><a href="#" class="service-desk" title="Service-Desk"></a></li>
-			<li><a href="#" class="information-security" title="Segurança da Informação"></a></li>
-			<li><a href="#" class="sva" title="SVA"></a></li>
-		</ul>
-
-		<div id="home" class="page">
-			<div class="links-home">
-				<a href="#" class="information-security" title="Segurança da Informação"></a>
-				<a href="#" class="sva" title="SVA"></a>
-				<a href="#" class="infrastructure" title="Infraestrutura"></a>
-				<a href="#" class="service-desk" title="Service Desk"></a>
-			</div>
-		</div>
-
-		<div id="infrastructure" class="page">
-			<img src="img/infraestrutura-hosting.jpg" alt="">
-			<ul class="nav-content">
-				<li><a href="#" class="hosting" title="Hosting"></a></li>
-				<li><a href="#" class="remote-management" title="Gestão Remota de TI"></a></li>
-				<li><a href="#" class="disaster-recovery" title="Disaster Recovery"></a></li>
-			</ul>
-		</div>
-
-		<div id="service-desk" class="page">
-			<img src="img/service-desk-lan.jpg" alt="">
-			<ul class="nav-content">
-				<li><a href="#" class="management-lan" title="Gestão de LAN"></a></li>
-				<li><a href="#" class="management-desktops" title="Gestão de Desktops"></a></li>
-				<li><a href="#" class="management-support" title="Gestão e Suporte"></a></li>
-			</ul>
-		</div>
-
-		<div id="information-security" class="page">
-			<img src="img/seguranca-managed.jpg" alt="">
-			<ul class="nav-content">
-				<li><a href="#" class="management-security" title="Managed Security Services"></a></li>
-				<li><a href="#" class="web-security" title="Web Security Gateway"></a></li>
-			</ul>
-		</div>
-
-		<div id="sva" class="page">
-			<img src="img/sva-multimidia.jpg" alt="">
-			<ul class="nav-content">
-				<li><a href="#" class="multimedia-solution" title="Solução Multimídia"></a></li>
-				<li><a href="#" class="collaboration-solution" title="Solução de Colaboração"></a></li>
-			</ul>
-		</div>
-	</div>
-
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/portfolio.js"></script>
+<div id="root">
+    <div class="wrapper">
+        <img src="img/home.jpg" alt="home" name="sessao1" width="1024" height="768" border="0" usemap="#home" id="sessao1" />
+        <map name="home" id="home"><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+        </map>
+  </div>
+    <div class="wrapper">
+        <img src="img/empresa.jpg" alt="empresa" name="sessao2" width="1024" height="768" usemap="#empresa" id="sessao2" />
+        <map name="empresa" id="empresa"><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+        </map>
+    </div>
+    <div class="wrapper">
+        <img src="img/solucoes-moveis.jpg" alt="solucoes moveis" name="sessao3" width="1024" height="768" usemap="#solucoes-moveis" id="sessao3" />
+        <map name="solucoes-moveis" id="solucoes-moveis"><area shape="rect" coords="879,83,995,153" href="#sessao3sub8" /><area shape="rect" coords="760,83,853,153" href="#sessao3sub7" /><area shape="rect" coords="638,83,749,153" href="#sessao3sub6" /><area shape="rect" coords="518,83,618,153" href="#sessao3sub5" /><area shape="rect" coords="395,83,513,153" href="#sessao3sub4" /><area shape="rect" coords="272,83,364,153" href="#sessao3sub3" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="28,83,143,154" href="#sessao3sub1" />
+          <area shape="rect" coords="158,83,256,154" href="#sessao3sub2" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content">
+        	<dl>
+            	<dt><img src="img/links/solucoes-moveis-voz-corporativa-1.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-moveis-voz-corporativa-flexivel-associados.gif" width="429" height="1308" /></dd>
+                <dt><img src="img/links/solucoes-moveis-voz-corporativa-2.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-moveis-voz-corporativa-intrarede.gif" width="418" height="383" /></dd>
+                <dt><img src="img/links/solucoes-moveis-voz-corporativa-3.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-moveis-voz-corporativa-intragrupo.gif" width="428" height="529" /></dd>
+                <dt><img src="img/links/solucoes-moveis-voz-corporativa-4.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-moveis-voz-corporativa-voz-e-dados.gif" width="427" height="327" /></dd>
+            </dl>
+        </div>
+        <img src="img/solucoes-moveis-ps-voz-corporativa.jpg" alt="solucoes moveis - ps voz corporativa" name="sessao3sub1" width="1024" height="768" usemap="#solucoes-moveis-psvozcorporativa" id="sessao3sub1" />
+        <map name="solucoes-moveis-psvozcorporativa" id="solucoes-moveis-psvozcorporativa"><area shape="rect" coords="879,83,995,153" href="#sessao3sub8" /><area shape="rect" coords="760,83,853,153" href="#sessao3sub7" /><area shape="rect" coords="638,83,749,153" href="#sessao3sub6" /><area shape="rect" coords="518,83,618,153" href="#sessao3sub5" /><area shape="rect" coords="395,83,513,153" href="#sessao3sub4" /><area shape="rect" coords="272,83,364,153" href="#sessao3sub3" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="28,83,143,154" href="#sessao3sub1" />
+          <area shape="rect" coords="158,83,256,154" href="#sessao3sub2" />
+        </map>
+    </div>
+    <div class="wrapper">
+      <div class="content"><img src="img/txt/solucoes-moveis-servicos-gestao.gif" width="427" height="511" class="txt" />
+            
+      </div>
+        <img src="img/solucoes-moveis-servicos-gestao.jpg" alt="solucoes moveis - servicos de gestão" name="sessao3sub2" width="1024" height="768" usemap="#solucoes-moveis-servicogestao" id="sessao3sub2" />
+        <map name="solucoes-moveis-servicogestao" id="solucoes-moveis-servicogestao"><area shape="rect" coords="879,83,995,153" href="#sessao3sub8" /><area shape="rect" coords="760,83,853,153" href="#sessao3sub7" /><area shape="rect" coords="638,83,749,153" href="#sessao3sub6" /><area shape="rect" coords="518,83,618,153" href="#sessao3sub5" /><area shape="rect" coords="395,83,513,153" href="#sessao3sub4" /><area shape="rect" coords="272,83,364,153" href="#sessao3sub3" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="28,83,143,154" href="#sessao3sub1" />
+          <area shape="rect" coords="158,83,256,154" href="#sessao3sub2" />
+        </map>
+    </div>
+    <div class="wrapper">
+      <div class="content"><img src="img/txt/solucoes-moveis-vivo-direto.gif" width="428" height="439" class="txt" />
+            
+      </div>
+        <img src="img/solucoes-moveis-vivo-direto.jpg" alt="solucoes moveis - vivo direto" name="sessao3sub3" width="1024" height="768" usemap="#solucoes-moveis-vivodireto" id="sessao3sub3" />
+        <map name="solucoes-moveis-vivodireto" id="solucoes-moveis-vivodireto"><area shape="rect" coords="879,83,995,153" href="#sessao3sub8" /><area shape="rect" coords="760,83,853,153" href="#sessao3sub7" /><area shape="rect" coords="638,83,749,153" href="#sessao3sub6" /><area shape="rect" coords="518,83,618,153" href="#sessao3sub5" /><area shape="rect" coords="395,83,513,153" href="#sessao3sub4" /><area shape="rect" coords="272,83,364,153" href="#sessao3sub3" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="28,83,143,154" href="#sessao3sub1" />
+          <area shape="rect" coords="158,83,256,154" href="#sessao3sub2" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content">
+        	<dl>
+            	<dt><img src="img/links/solucoes-moveis-mensageria-1.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-moveis-mensageria-torpedo-empresas.gif" width="428" height="535" /></dd>
+                <dt><img src="img/links/solucoes-moveis-mensageria-2.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-moveis-mensageria-sms.gif" width="424" height="407" /></dd>
+            </dl>
+        </div>
+        <img src="img/solucoes-moveis-mensageira.jpg" alt="solucoes moveis - messageira" name="sessao3sub4" width="1024" height="768"  usemap="#solucoes-moveis-messageira" id="sessao3sub4"/>
+        <map name="solucoes-moveis-messageira" id="solucoes-moveis-messageira"><area shape="rect" coords="879,83,995,153" href="#sessao3sub8" /><area shape="rect" coords="760,83,853,153" href="#sessao3sub7" /><area shape="rect" coords="638,83,749,153" href="#sessao3sub6" /><area shape="rect" coords="518,83,618,153" href="#sessao3sub5" /><area shape="rect" coords="395,83,513,153" href="#sessao3sub4" /><area shape="rect" coords="272,83,364,153" href="#sessao3sub3" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="28,83,143,154" href="#sessao3sub1" />
+          <area shape="rect" coords="158,83,256,154" href="#sessao3sub2" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content">
+        	<dl>
+            	<dt><img src="img/links/solucoes-moveis-internet-1.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-moveis-internet-brasil.gif" width="428" height="535" /></dd>
+                <dt><img src="img/links/solucoes-moveis-internet-2.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-moveis-internet-internacional.gif" width="424" height="407" /></dd>
+            </dl>
+        </div>
+        <img src="img/solucoes-moveis-vivo-internet.jpg" alt="solucoes moveis - vivo internet" name="sessao3sub5" width="1024" height="768" usemap="solucoes-moveis-vivo-internet" id="sessao3sub5" />
+        <map name="solucoes-moveis-vivo-internet" id="solucoes-moveis-vivo-internet"><area shape="rect" coords="879,83,995,153" href="#sessao3sub8" /><area shape="rect" coords="760,83,853,153" href="#sessao3sub7" /><area shape="rect" coords="638,83,749,153" href="#sessao3sub6" /><area shape="rect" coords="518,83,618,153" href="#sessao3sub5" /><area shape="rect" coords="395,83,513,153" href="#sessao3sub4" /><area shape="rect" coords="272,83,364,153" href="#sessao3sub3" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="28,83,143,154" href="#sessao3sub1" />
+          <area shape="rect" coords="158,83,256,154" href="#sessao3sub2" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content"><img src="img/txt/solucoes-moveis-blackberry.gif" width="428" height="453" class="txt" />
+        	
+        </div>
+        <img src="img/solucoes-moveis-blackberry.jpg" alt="solucoes moveis - blackberry" name="sessao3sub6" width="1024" height="768" usemap="solucoes-moveis-blackberry" id="sessao3sub6" />
+        <map name="solucoes-moveis-blackberry" id="solucoes-moveis-blackberry"><area shape="rect" coords="879,83,995,153" href="#sessao3sub8" /><area shape="rect" coords="760,83,853,153" href="#sessao3sub7" /><area shape="rect" coords="638,83,749,153" href="#sessao3sub6" /><area shape="rect" coords="518,83,618,153" href="#sessao3sub5" /><area shape="rect" coords="395,83,513,153" href="#sessao3sub4" /><area shape="rect" coords="272,83,364,153" href="#sessao3sub3" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="28,83,143,154" href="#sessao3sub1" />
+          <area shape="rect" coords="158,83,256,154" href="#sessao3sub2" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content"><img src="img/txt/solucoes-moveis-m2m.gif" width="450" height="561" border="0" class="txt" />
+        </div>
+        <img src="img/solucoes-moveis-m2m.jpg" alt="solucoes moveis - m2m" name="sessao3sub7" width="1024" height="768" usemap="solucoes-moveis-m2m" id="sessao3sub7" />
+        <map name="solucoes-moveis-m2m" id="solucoes-moveis-m2m"><area shape="rect" coords="879,83,995,153" href="#sessao3sub8" /><area shape="rect" coords="760,83,853,153" href="#sessao3sub7" /><area shape="rect" coords="638,83,749,153" href="#sessao3sub6" /><area shape="rect" coords="518,83,618,153" href="#sessao3sub5" /><area shape="rect" coords="395,83,513,153" href="#sessao3sub4" /><area shape="rect" coords="272,83,364,153" href="#sessao3sub3" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="28,83,143,154" href="#sessao3sub1" />
+          <area shape="rect" coords="158,83,256,154" href="#sessao3sub2" />
+        </map>
+    </div>
+    <div class="wrapper">
+        <img src="img/solucoes-moveis-m2m-video.jpg" alt="solucoes moveis - m2m - video" name="sessao3sub7video" width="1024" height="768" usemap="solucoes-moveis-m2m-video" id="sessao3sub7video" />
+        <map name="solucoes-moveis-m2m-video" id="solucoes-moveis-m2m-video"><area shape="rect" coords="879,83,995,153" href="#sessao3sub8" /><area shape="rect" coords="760,83,853,153" href="#sessao3sub7" /><area shape="rect" coords="638,83,749,153" href="#sessao3sub6" /><area shape="rect" coords="518,83,618,153" href="#sessao3sub5" /><area shape="rect" coords="395,83,513,153" href="#sessao3sub4" /><area shape="rect" coords="272,83,364,153" href="#sessao3sub3" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="28,83,143,154" href="#sessao3sub1" />
+          <area shape="rect" coords="158,83,256,154" href="#sessao3sub2" />
+          <area shape="rect" coords="816,198,871,256" href="#sessao3sub7" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content"><img src="img/txt/solucoes-moveis-telecom.gif" width="427" height="482" class="txt" />
+        	
+        </div>
+        <img src="img/solucoes-moveis-telecon.jpg" alt="solucoes moveis - telecom" name="sessao3sub8" width="1024" height="768" usemap="solucoes-moveis-telecon" id="sessao3sub8" />
+        <map name="solucoes-moveis-telecon" id="solucoes-moveis-telecon"><area shape="rect" coords="879,83,995,153" href="#sessao3sub8" /><area shape="rect" coords="760,83,853,153" href="#sessao3sub7" /><area shape="rect" coords="638,83,749,153" href="#sessao3sub6" /><area shape="rect" coords="518,83,618,153" href="#sessao3sub5" /><area shape="rect" coords="395,83,513,153" href="#sessao3sub4" /><area shape="rect" coords="272,83,364,153" href="#sessao3sub3" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="28,83,143,154" href="#sessao3sub1" />
+          <area shape="rect" coords="158,83,256,154" href="#sessao3sub2" />
+        </map>
+    </div>
+    <div class="wrapper">
+        <img src="img/solucoes-moveis-ti.jpg" alt="solucoes moveis - ti" name="sessao4" width="1024" height="768"  usemap="#solucoes-moveis-ti" id="sessao4"/>
+        <map name="solucoes-moveis-ti" id="solucoes-moveis-ti"><area shape="rect" coords="693,83,810,154" href="#sessao4sub4" /><area shape="rect" coords="532,83,666,154" href="#sessao4sub3" /><area shape="rect" coords="372,83,500,153" href="#sessao4sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="212,83,320,154" href="#sessao4sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+	    <div class="content">
+    		<dl>
+            	<dt><img src="img/links/solucoes-ti-infra-1.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-ti-infra-center-telefonica.gif" width="423" height="613" /></dd>
+                <dt><img src="img/links/solucoes-ti-infra-2.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-ti-infra-center-cliente.gif" width="423" height="396" /></dd>
+                <dt><img src="img/links/solucoes-ti-infra-3.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-ti-infra-recovery.gif" width="417" height="238" /></dd>
+            </dl>
+    	</div>
+        <img src="img/solucoes-ti-infra.jpg" alt="solucoes em ti - infra" name="sessao4sub1" width="1024" height="768"  usemap="#solucoes-ti-infra" id="sessao4sub1"/>
+        <map name="solucoes-ti-infra" id="solucoes-ti-infra"><area shape="rect" coords="693,83,810,154" href="#sessao4sub4" /><area shape="rect" coords="532,83,666,154" href="#sessao4sub3" /><area shape="rect" coords="372,83,500,153" href="#sessao4sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="212,83,320,154" href="#sessao4sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content">
+    		<dl>
+            	<dt><img src="img/links/solucoes-ti-seguranca-1.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-ti-seguranca-mss.gif" width="425" height="540" /></dd>
+                <dt><img src="img/links/solucoes-ti-seguranca-2.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-ti-seguranca-wsg.gif" width="429" height="496" /></dd>
+            </dl>
+    	</div>
+        <img src="img/solucoes-ti-seguranca.jpg" alt="solucao de ti - seguranca" name="sessao4sub2" width="1024" height="768"  usemap="#solucoes-ti-seguranca" id="sessao4sub2"/>
+        <map name="solucoes-ti-seguranca" id="solucoes-ti-seguranca"><area shape="rect" coords="693,83,810,154" href="#sessao4sub4" /><area shape="rect" coords="532,83,666,154" href="#sessao4sub3" /><area shape="rect" coords="372,83,500,153" href="#sessao4sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="212,83,320,154" href="#sessao4sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content">
+    		<dl>
+            	<dt><img src="img/links/solucoes-ti-produtividade-1.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-ti-produtividade-lan.gif" width="425" height="237" /></dd>
+                <dt><img src="img/links/solucoes-ti-produtividade-2.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-ti-produtividade-desktop.gif" width="417" height="309" /></dd>
+                <dt><img src="img/links/solucoes-ti-produtividade-3.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-ti-produtividade-service-desk.gif" width="398" height="210" /></dd>
+            </dl>
+    	</div>
+        <img src="img/solucoes-ti-produtividade.jpg" alt="solucoes de ti - produtividade" name="sessao4sub3" width="1024" height="768"  usemap="#solucoes-ti-produtividade" id="sessao4sub3"/>
+        <map name="solucoes-ti-produtividade" id="solucoes-ti-produtividade"><area shape="rect" coords="693,83,810,154" href="#sessao4sub4" /><area shape="rect" coords="532,83,666,154" href="#sessao4sub3" /><area shape="rect" coords="372,83,500,153" href="#sessao4sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="212,83,320,154" href="#sessao4sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content">
+    		<dl>
+            	<dt><img src="img/links/solucoes-ti-colaboracao-1.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-ti-colaboracao-telepresenca.gif" width="423" height="324" /></dd>
+                <dt><img src="img/links/solucoes-ti-colaboracao-2.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-ti-colaboracao-flexmidia.gif" width="427" height="525" /></dd>
+            </dl>
+    	</div>
+        <img src="img/solucoes-ti-colaboracoes.jpg" alt="solucoes de ti - colaboracoes" name="sessao4sub4" width="1024" height="768"  usemap="#solucoes-ti-colaboracoes" id="sessao4sub4"/>
+        <map name="solucoes-ti-colaboracoes" id="solucoes-ti-colaboracoes"><area shape="rect" coords="693,83,810,154" href="#sessao4sub4" /><area shape="rect" coords="532,83,666,154" href="#sessao4sub3" /><area shape="rect" coords="372,83,500,153" href="#sessao4sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="212,83,320,154" href="#sessao4sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+        <img src="img/solucoes-dados.jpg" alt="solucoes de dados" name="sessao5" width="1024" height="768"  usemap="#solucoes-dados" id="sessao5"/>
+        <map name="solucoes-dados" id="solucoes-dados"><area shape="rect" coords="827,82,924,153" href="#sessao5sub6" /><area shape="rect" coords="687,83,819,153" href="#sessao5sub5" /><area shape="rect" coords="548,83,654,154" href="#sessao5sub4" /><area shape="rect" coords="393,83,499,154" href="#sessao5sub3" /><area shape="rect" coords="252,83,358,154" href="#sessao5sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="131,83,237,154" href="#sessao5sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content"><img src="img/txt/solucoes-dados-ip-internet.gif" width="400" height="756" class="txt" /></div>
+        <img src="img/solucoes-dados-ip-internet.jpg" alt="solucoes de dados - ip internet" name="sessao5sub1" width="1024" height="768"  usemap="#solucoes-dados-ip" id="sessao5sub1"/>
+        <map name="solucoes-dados-ip" id="solucoes-dados-ip"><area shape="rect" coords="827,82,924,153" href="#sessao5sub6" /><area shape="rect" coords="687,83,819,153" href="#sessao5sub5" /><area shape="rect" coords="548,83,654,154" href="#sessao5sub4" /><area shape="rect" coords="393,83,499,154" href="#sessao5sub3" /><area shape="rect" coords="252,83,358,154" href="#sessao5sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="131,83,237,154" href="#sessao5sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content"><img src="img/txt/solucoes-dados-vpn.gif" width="413" height="885" class="txt" /></div>
+        <img src="img/solucoes-dados-vpn.jpg" alt="solucoes de dados - vpn" name="sessao5sub2" width="1024" height="768"  usemap="#solucoes-dados-vpn" id="sessao5sub2"/>
+        <map name="solucoes-dados-vpn" id="solucoes-dados-vpn"><area shape="rect" coords="827,82,924,153" href="#sessao5sub6" /><area shape="rect" coords="687,83,819,153" href="#sessao5sub5" /><area shape="rect" coords="548,83,654,154" href="#sessao5sub4" /><area shape="rect" coords="393,83,499,154" href="#sessao5sub3" /><area shape="rect" coords="252,83,358,154" href="#sessao5sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="131,83,237,154" href="#sessao5sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content"><img src="img/txt/solucoes-dados-smart.gif" width="424" height="338" class="txt" /></div>
+        <img src="img/solucoes-dados-smart.jpg" alt="solucoes de dados - smart" name="sessao5sub3" width="1024" height="768"  usemap="#solucoes-dados-smart" id="sessao5sub3"/>
+        <map name="solucoes-dados-smart" id="solucoes-dados-smart"><area shape="rect" coords="827,82,924,153" href="#sessao5sub6" /><area shape="rect" coords="687,83,819,153" href="#sessao5sub5" /><area shape="rect" coords="548,83,654,154" href="#sessao5sub4" /><area shape="rect" coords="393,83,499,154" href="#sessao5sub3" /><area shape="rect" coords="252,83,358,154" href="#sessao5sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="131,83,237,154" href="#sessao5sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content"><img src="img/txt/solucoes-dados-metrolan.gif" width="427" height="512" class="txt" /></div>
+        <img src="img/solucoes-dados-metrolan.jpg" alt="solucoes de dados - metrolan" name="sessao5sub4" width="1024" height="768"  usemap="#solucoes-dados-metrolan" id="sessao5sub4"/>
+        <map name="solucoes-dados-metrolan" id="solucoes-dados-metrolan"><area shape="rect" coords="827,82,924,153" href="#sessao5sub6" /><area shape="rect" coords="687,83,819,153" href="#sessao5sub5" /><area shape="rect" coords="548,83,654,154" href="#sessao5sub4" /><area shape="rect" coords="393,83,499,154" href="#sessao5sub3" /><area shape="rect" coords="252,83,358,154" href="#sessao5sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="131,83,237,154" href="#sessao5sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content"><img src="img/txt/solucoes-dados-servicos-internacionais.gif" width="427" height="943" class="txt" /></div>
+        <img src="img/solucoes-dados-servicos-internacionais.jpg" alt="solucoes de dados - servicos internacionais" name="sessao5sub5" width="1024" height="768"  usemap="#solucoes-dados-internacionais" id="sessao5sub5"/>
+        <map name="solucoes-dados-internacionais" id="solucoes-dados-internacionais"><area shape="rect" coords="827,82,924,153" href="#sessao5sub6" /><area shape="rect" coords="687,83,819,153" href="#sessao5sub5" /><area shape="rect" coords="548,83,654,154" href="#sessao5sub4" /><area shape="rect" coords="393,83,499,154" href="#sessao5sub3" /><area shape="rect" coords="252,83,358,154" href="#sessao5sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="131,83,237,154" href="#sessao5sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content"><img src="img/txt/solucoes-dados-cdn.gif" width="427" height="943" class="txt" /></div>
+        <img src="img/solucoes-dados-cdn.jpg" alt="solucoes de dados - cdn" name="sessao5sub6" width="1024" height="768"  usemap="#solucoes-dados-cdn" id="sessao5sub6"/>
+        <map name="solucoes-dados-cdn" id="solucoes-dados-cdn"><area shape="rect" coords="827,82,924,153" href="#sessao5sub6" /><area shape="rect" coords="687,83,819,153" href="#sessao5sub5" /><area shape="rect" coords="548,83,654,154" href="#sessao5sub4" /><area shape="rect" coords="393,83,499,154" href="#sessao5sub3" /><area shape="rect" coords="252,83,358,154" href="#sessao5sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="131,83,237,154" href="#sessao5sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+        <img src="img/solucoes-voz.jpg" alt="solucoes de voz" name="sessao6" width="1024" height="768"  usemap="#solucoes-voz" id="sessao6"/>
+        <map name="solucoes-voz" id="solucoes-voz"><area shape="rect" coords="528,84,643,154" href="#sessao6sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="394,84,509,154" href="#sessao6sub1" />
+        </map>
+    </div>
+    <div class="wrapper">
+    	<div class="content">
+        	<dl>
+            	<dt><img src="img/links/solucoes-voz-tradicional-1.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-voz-tradicional-ddr.gif" width="428" height="595" /></dd>
+                <dt><img src="img/links/solucoes-voz-tradicional-2.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-voz-tradicional-locais.gif" width="426" height="437" /></dd>
+                <dt><img src="img/links/solucoes-voz-tradicional-3.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-voz-tradicional-sva.gif" width="421" height="583" /></dd>
+                <dt><img src="img/links/solucoes-voz-tradicional-4.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-voz-tradicional-longa.gif" width="416" height="382" /></dd>
+                <dt><img src="img/links/solucoes-voz-tradicional-5.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-voz-tradicional-pdt.gif" width="428" height="511" /></dd>
+                <dt><img src="img/links/solucoes-voz-tradicional-6.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-voz-tradicional-direto.gif" width="423" height="309" /></dd>
+                <dt><img src="img/links/solucoes-voz-tradicional-7.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-voz-tradicional-relacionamento.gif" width="421" height="379" /></dd>
+            </dl>
+        </div>
+        <img src="img/solucoes-voz-tradicional.jpg" alt="solucoes de voz - tradicional" name="sessao6sub1" width="1024" height="768"  usemap="#solucoes-voz-tradicional" id="sessao6sub1"/>
+        <map name="solucoes-voz-tradicional" id="solucoes-voz-tradicional"><area shape="rect" coords="528,84,643,154" href="#sessao6sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="394,84,509,154" href="#sessao6sub1" />
+        </map>
+    </div>
+  <div class="wrapper">
+  		<div class="content">
+        	<dl>
+            	<dt><img src="img/links/solucoes-voz-avancada-1.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-voz-avancada-0800.gif" width="428" height="692" /></dd>
+                <dt><img src="img/links/solucoes-voz-avancada-2.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-voz-avancada-0300.gif" width="424" height="499" /></dd>
+                <dt><img src="img/links/solucoes-voz-avancada-3.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-voz-avancada-ura.gif" width="419" height="496" /></dd>
+                <dt><img src="img/links/solucoes-voz-avancada-4.gif" width="410" height="24" /></dt>
+                <dd><img src="img/txt/solucoes-voz-avancada-map.gif" width="421" height="352" /></dd>
+            </dl>
+        </div>
+        <img src="img/solucoes-voz-avancada.jpg" alt="solucoes de voz - avancada" name="sessao6sub2" width="1024" height="768"  usemap="#solucoes-voz-avancada" id="sessao6sub2"/>
+        <map name="solucoes-voz-avancada" id="solucoes-voz-avancada"><area shape="rect" coords="528,84,643,154" href="#sessao6sub2" /><area shape="rect" coords="852,2,1023,81" href="#sessao6" /><area shape="rect" coords="682,2,853,81" href="#sessao5" /><area shape="rect" coords="512,2,683,81" href="#sessao4" /><area shape="rect" coords="342,2,513,81" href="#sessao3" /><area shape="rect" coords="172,2,343,81" href="#sessao2" />
+          <area shape="rect" coords="2,2,173,81" href="#sessao1" />
+          <area shape="rect" coords="394,84,509,154" href="#sessao6sub1" />
+        </map>
+  </div>
+</div>
 </body>
 </html>
